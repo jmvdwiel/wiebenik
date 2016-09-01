@@ -1,0 +1,224 @@
+/* ======================
+PRESETS
+
+black = #080808
+grey = #7b7979
+white = #f4f4f4
+red = #c30e16
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lobster', cursive;
+
+====================== */
+
+/* ======================
+BASIC STRUCTURE
+====================== */
+
+a {
+	text-decoration: none;
+	color: #080808;
+}
+
+h3 {
+	font-family: 'Lobster', cursive;
+	margin-top: 10px;
+	color: #080808;
+	font-size: 32px;
+	line-height: 32px;
+	margin-bottom: 0px;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+body {
+	margin: 0 auto;
+	background-image: url('background.png') ;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #080808;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+span {
+	text-decoration: line-through;
+}
+
+main {
+	position: absolute;
+	left: calc(50vw - 300px);
+	top: 25vh;
+	margin-bottom: 100px;
+	width: 600px;
+	background-color: #f4f4f4;
+	border-radius: 25px;
+	text-align: center;
+	z-index: 2;
+}
+
+article {
+	margin-bottom: 10px;
+}
+
+/* ======================
+FLOATERS
+====================== */
+
+.floater {
+	-webkit-filter: blur(3px);
+	background-image: url('floater.png');
+	width: 100px;
+	height: 200px;
+	position: fixed;
+	top: 50px;
+	left: calc(50vw + 275px);
+	z-index: 3;
+}
+
+.floater:hover {
+	-webkit-filter: blur(0px);
+}
+
+/* ======================
+NAMEAGE
+====================== */
+#nameage p {
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#nameage h3{
+	color: #c30e16;
+}
+
+/* ======================
+PERSONALITY
+====================== */
+
+#personalityA {
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: 800;
+}
+
+#personalityB {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+/* ======================
+KNOWLEDGE
+====================== */
+
+#knowledge {
+	width: 50%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#knowledge ul {
+	padding-left: 40px;
+}
+
+.three,
+.four,
+.five {
+	height: 20px;
+	width: 0px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.three {
+	background-color: #df3d11;
+	animation-name: three;
+	animation-delay: 2s;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes three {
+	from {width: 0px;}
+	to {width: 100px;}
+}
+
+.four {
+	background-color: #dfb611;
+	animation-name: four;
+	animation-delay: 2s;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes four {
+	from {width: 0px;}
+	to {width: 150px;}
+}
+
+.five {
+	background-color: #b6df11;
+	animation-name: five;
+	animation-delay: 2s;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes five {
+	from {width: 0px;}
+	to {width: 200px;}
+}
+
+/* ======================
+STUDIES & WORKEXPERIENCE
+====================== */
+
+#studies p,
+#workexperience p{
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+#workexperience {
+	margin-bottom: 40px;
+}
+
+/* ======================
+CONTACT
+====================== */
+
+#contact {
+	position: absolute;
+	border-radius: 20px;
+	top: 50vh;
+	left: 75vw;
+	width: 300px;
+	height: 150px;
+	background-color: #c30e16;
+	text-align: center;
+	z-index: 8;
+	-webkit-filter: blur(6px);
+}
+
+#contact:hover {
+	-webkit-filter: blur(0px);
+}
+
+#contact a,
+#contact h3{
+	text-align: center;
+	color: #f4f4f4;
+}
